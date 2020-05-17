@@ -287,3 +287,54 @@ hr {
 ::-webkit-scrollbar-thumb {
   display: none;
 }
+
+#profile .row > div {
+    margin-bottom: 20px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #888;
+}
+
+.navbar-header {
+	display: none;
+}
+
+@media (max-width: 767px){
+	.fixed .navbar {
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	}
+
+	.content {
+	    padding: 60px 20px;
+	    min-width: 280px;
+	}
+
+	#profile .row * {
+	    text-align: center;
+	}
+
+	.navbar-header {
+		display: block;
+		width: 100%;
+	}
+
+	.icon-bar {
+		margin: 2px 0px;
+	}
+
+	.navbar .navbar-collapse {
+	    padding: 0px;
+	    max-height: none;
+	}
+}
