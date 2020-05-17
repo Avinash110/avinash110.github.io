@@ -172,7 +172,7 @@ br {
 
 .content {
     max-width: 1280px;
-    padding: 40px 180px;
+    padding: 0px 180px;
     margin-left: auto;
     margin-right: auto;
 }
