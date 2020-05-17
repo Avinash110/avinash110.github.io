@@ -26,13 +26,13 @@
         </button>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse show">
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul id="menu-bar" class="nav navbar-nav">
-          <li class="active"><a href="#profile">Profile</a></li>
-          <li class=""><a href="#experiences">Experiences</a></li>
-          <li class=""><a href="#abilities">Abilities</a></li>
-          <li class=""><a href="#projects">Projects</a></li>
-          <li class=""><a href="#contact">Contact</a></li>
+          <li class="active"><a class="navbar-link" href="#profile">Profile</a></li>
+          <li class=""><a class="navbar-link" href="#experiences">Experiences</a></li>
+          <li class=""><a class="navbar-link" href="#abilities">Abilities</a></li>
+          <li class=""><a class="navbar-link" href="#projects">Projects</a></li>
+          <li class=""><a class="navbar-link" href="#contact">Contact</a></li>
           <li class=""><a href="Avinash Bhojwani Resume.pdf" target="_blank" download="Avinash Bhojwani Resume.pdf">Resume</a></li>
         </ul>
       </div>
@@ -1390,8 +1390,12 @@
     $(function() {
       var screen = $(window);  
 
-       if (screen.width() < 768) {
-          $('.collapse.navbar-collapse').removeClass('show');
+       if (screen.width() > 768) {
+          $('.collapse.navbar-collapse').addClass('show');
+       } else {
+          $('.navbar-link').click(function() {
+            $('.collapse.navbar-collapse').removeClass('show');
+          });
        }
 
     });
