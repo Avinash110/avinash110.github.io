@@ -52,6 +52,7 @@ a:hover {
 
 .card-text {
 	font-size: 14px;
+	height: 105px;
 }
 
 .card:hover {
